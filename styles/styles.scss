@@ -374,7 +374,7 @@ section {
 // Portfolio delen //
 
 .port-text {
-  padding: 2rem 0;
+  padding: 5rem 0;
   text-align: center;
 }
 
@@ -447,6 +447,57 @@ section {
 .portfolio-item:hover .hover-items {
   opacity: 1;
   transform: scale(1);
+}
+
+// Blog seksjonen
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  .blog {
+    position: relative;
+    background-color: var(--colour-grey-5);
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px (rgba(0, 0, 0, 0.1));
+    transition: all 0.4s ease-in-out;
+    img {
+      box-shadow: 1px 4px 20px (rgba(0, 0, 0, 0.8));
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+  }
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    filter: grayscale(100%);
+    transition: all 0.4s ease-in-out;
+  }
+  .blog-text {
+    margin-top: -7px;
+    padding: 1.1rem;
+    border-top: 8px solid var(--colour-secondary);
+  }
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: var(--colour-secondary);
+    }
+  }
+  p {
+    color: var(--colour-grey-2);
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+  }
 }
 
 //Bruke på nytt igjen komponenter//
