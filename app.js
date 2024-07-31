@@ -39,6 +39,14 @@ function PageTransistions() {
       }
     }
   });
+
+  //Forndre mellom mørk og lyst bakgrunn//
+
+  const themeBtn = document.querySelector(".theme-btn");
+  themeBtn.addEventListener("click", () => {
+    let elment = document.body;
+    elment.classList.toggle("light-mode");
+  });
 }
 
 PageTransistions();
